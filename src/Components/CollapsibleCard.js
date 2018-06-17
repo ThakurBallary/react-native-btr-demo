@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { CollapsibleCard } from 'react-native-btr';
 
-class CollapsibleCard extends Component {
+class CollapsibleCardDemo extends Component {
 
     static navigationOptions = {
         title: 'CollapsibleCard'
@@ -10,7 +11,26 @@ class CollapsibleCard extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>CollapsibleCard</Text>
+                <CollapsibleCard
+                    visibleByDefault={true}
+                    title='List'
+                >
+                    {
+                        ['Item 1', 'Item 2'].map((item, index) => 
+                            <View key={item + index} style={{padding: 16}}>
+                                <Text>{item}</Text>
+                            </View>
+                        )
+                    }
+                </CollapsibleCard>
+                <CollapsibleCard
+                    visibleByDefault={true}
+                    title='Card'
+                >
+                    <View style={styles.content}>
+                        <Text>Content of CollapsibleCard</Text>
+                    </View>
+                </CollapsibleCard>
             </View>
         );
     }
@@ -19,9 +39,12 @@ class CollapsibleCard extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
     },
+    content: {
+        height: 100, 
+        alignItems: 'center', 
+        justifyContent: 'center'
+    }
 });
 
-export default CollapsibleCard;
+export default CollapsibleCardDemo;

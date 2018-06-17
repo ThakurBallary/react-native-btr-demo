@@ -12,9 +12,9 @@ class CheckBoxDemo extends Component {
         super(props);
         this.state = {
             data: [
-                { title: 'CheckBox 1', checked: true },
-                { title: 'CheckBox 2', checked: false, color: '#08f' },
-                { title: 'CheckBox 3', checked: true, disabled: true }
+                { title: 'Default' },
+                { title: 'Colored', checked: true, color: '#08f' },
+                { title: 'Disabled', checked: true, disabled: true }
             ]
         }
     }
