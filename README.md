@@ -1,2 +1,7 @@
-# react-native-btr-demo
-React Native App to show the demo of components from react-native-btr library
+# React Native BTR Demo
+
+Demonstration of clean and simple components from [react-native-btr](https://www.npmjs.com/package/react-native-btr) library
+
+[Live on Expo](https://expo.io/@thakurballary/react-native-btr-demo)
+
+###### Note: Suggestions are always welcome.
