@@ -3439,9 +3439,9 @@ react-native-branch@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
 
-react-native-btr@^1.0.6:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/react-native-btr/-/react-native-btr-1.0.7.tgz#ad555fdc3e3425915dd824eb71e75ec1bbac2a7c"
+react-native-btr@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-btr/-/react-native-btr-1.0.9.tgz#8fc3cf23817af32ea16032ac1ae52666129fe03a"
   dependencies:
     react-native-modal "^6.1.0"
 
