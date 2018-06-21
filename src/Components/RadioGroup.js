@@ -50,7 +50,7 @@ class RadioGroupDemo extends Component {
                         labelStyle={{ fontSize: 14 }}
                         radioButtons={this.state.radioButtonsHorizontal}
                         onPress={radioButtonsHorizontal => this.setState({ radioButtonsHorizontal })}
-                        style={styles.radioButtonsHorizontal}
+                        style={{ flexDirection: 'row', alignSelf: 'center' }}
                     />
                 </View>
             </View>
@@ -67,10 +67,6 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         margin: 20,
         padding: 20
-    },
-    radioButtonsHorizontal: {
-        flexDirection: 'row', 
-        alignSelf: 'center'
     }
 });
 
