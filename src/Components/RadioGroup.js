@@ -9,18 +9,28 @@ class RadioGroupDemo extends Component {
     }
 
     state = {
-        radioButtons: [
+        radioButtonsVertical: [
             {
                 label: 'Default',
             },
             {
                 label: 'In-Progress',
                 checked: true,
-                color: '#cb8'
+                color: '#f84'
             },
             {
                 label: 'Completed',
                 color: '#484'
+            },
+        ],
+        radioButtonsHorizontal: [
+            {
+                label: 'In-Progress',
+                flexDirection: 'column'
+            },
+            {
+                label: 'Completed',
+                flexDirection: 'column'
             },
         ]
     }
@@ -29,11 +39,18 @@ class RadioGroupDemo extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.card}>
-                    <RadioGroup 
-                        labelStyle={{fontSize: 14}}
-                        radioButtons={this.state.radioButtons}
-                        onPress={radioButtons => this.setState({radioButtons})}
-                        style={{flexDirection: 'row'}}
+                    <RadioGroup
+                        labelStyle={{ fontSize: 14 }}
+                        radioButtons={this.state.radioButtonsVertical}
+                        onPress={radioButtonsVertical => this.setState({ radioButtonsVertical })}                        
+                    />
+                </View>
+                <View style={styles.card}>
+                    <RadioGroup
+                        labelStyle={{ fontSize: 14 }}
+                        radioButtons={this.state.radioButtonsHorizontal}
+                        onPress={radioButtonsHorizontal => this.setState({ radioButtonsHorizontal })}
+                        style={{ flexDirection: 'row', alignSelf: 'center' }}
                     />
                 </View>
             </View>
@@ -48,7 +65,7 @@ const styles = StyleSheet.create({
     card: {
         backgroundColor: '#fff',
         borderRadius: 4,
-        margin: 20, 
+        margin: 20,
         padding: 20
     }
 });

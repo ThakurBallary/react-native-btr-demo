@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { RadioButton } from 'react-native-btr';
 
 class RadioButtonDemo extends Component {
-    
+
     static navigationOptions = {
         title: 'RadioButton'
     }
@@ -11,9 +11,9 @@ class RadioButtonDemo extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={{fontWeight: 'bold', margin: 20}}>
-                    For functionality check 
-                    <Text style={{fontSize: 20}}>"RadioGroup"</Text>
+                <Text style={{ fontWeight: 'bold', margin: 20 }}>
+                    For functionality check
+                    <Text style={{ fontSize: 20 }}>"RadioGroup"</Text>
                 </Text>
                 <View style={styles.card}>
                     <View style={styles.row}><RadioButton /><Text style={styles.label}>Default</Text></View>
@@ -29,7 +29,7 @@ class RadioButtonDemo extends Component {
                         <Text style={styles.label}>color & size</Text>
                     </View>
                     <View style={styles.row}>
-                        <RadioButton 
+                        <RadioButton
                             checked={true}
                             color='#484'
                             disabled={true}
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     card : {
         backgroundColor: '#fff', 
         margin: 10, 
-        padding: 10, 
+        padding: 10,
         borderRadius: 4
     },
     row: {

@@ -8,12 +8,17 @@ class SnackBarDemo extends Component {
         title: 'SnackBar'
     }
 
-    onPress = () => alert('UNDO Pressed');
+    state = {
+        visible: false
+    }
+
+    onPress = () => this.setState({visible: !this.state.visible});
 
     render() {
         return (
             <View style={styles.container}>
-                <SnackBar text='SnackBar Dude' onPress={this.onPress} />
+                <SnackBar text='Will close only onPress of action' duration={0} actionText='NEXT' onPress={this.onPress} />
+                { this.state.visible && <SnackBar text='Will close in 5 seconds' onPress={()=>alert('5 seconds SnackBar')} /> }
             </View>
         );
     }
