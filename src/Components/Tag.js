@@ -60,7 +60,7 @@ class TagDemo extends Component {
                             <Tag
                                 name={tag.name}
                                 style={{ backgroundColor: tag.color, color: '#fff', borderRadius: 50 }}
-                                iconRight="close-circle"
+                                iconRight="cancel"
                                 onPress={() => this.removeTag(index)}
                             />
                         </View>
@@ -68,7 +68,7 @@ class TagDemo extends Component {
                     <View style={{ margin: 2 }}>
                         <Tag
                             name="add tag"
-                            iconLeft="plus-circle"
+                            iconLeft="add-circle"
                             style={{ backgroundColor: "#0008", color: '#fff', borderRadius: 50 }}
                             onPress={this.toggle}
                         />

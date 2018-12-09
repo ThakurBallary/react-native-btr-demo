@@ -1,5 +1,5 @@
 import { Animated } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Home from '../Components/Home';
 import BottomSheet from '../Components/BottomSheet';
@@ -48,7 +48,7 @@ const RootStack = createStackNavigator(
         RadioGroup,
         Separator,
         SnackBar,
-        Tag    
+        Tag,
     },
     {
         initialRouteName: 'Home',
@@ -56,4 +56,4 @@ const RootStack = createStackNavigator(
     }
 )
 
-export default RootStack;
+export default createAppContainer(RootStack);
