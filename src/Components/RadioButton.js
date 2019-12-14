@@ -13,7 +13,7 @@ class RadioButtonDemo extends Component {
             <View style={styles.container}>
                 <Text style={{ fontWeight: 'bold', margin: 20 }}>
                     For functionality check
-                    <Text style={{ fontSize: 20 }}>"RadioGroup"</Text>
+                    <Text style={{ fontSize: 20 }}> "RadioGroup"</Text>
                 </Text>
                 <View style={styles.card}>
                     <View style={styles.row}><RadioButton /><Text style={styles.label}>Default</Text></View>

@@ -15,7 +15,9 @@ class BottomSheetDemo extends Component {
         }
     }
 
-    toggle = () => this.setState({ visible: !this.state.visible });
+    toggle = () => this.setState(previousState => (
+        { visible: !previousState.visible }
+    ))
 
     render() {
         return (
