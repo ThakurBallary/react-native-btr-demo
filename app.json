@@ -3,7 +3,7 @@
     "name": "react-native-btr-demo",
     "slug": "react-native-btr-demo",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
+    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android"

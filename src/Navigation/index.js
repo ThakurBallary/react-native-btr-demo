@@ -1,5 +1,6 @@
 import { Animated } from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from '../Components/Home';
 import BottomSheet from '../Components/BottomSheet';
