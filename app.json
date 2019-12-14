@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "react-native-btr-demo",
+    "name": "BTR Components",
+    "description": "Basic and Simple UI Components",
     "slug": "react-native-btr-demo",
     "privacy": "public",
     "sdkVersion": "36.0.0",
@@ -8,7 +9,7 @@
       "ios",
       "android"
     ],
-    "version": "1.0.0",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
