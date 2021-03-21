@@ -37,7 +37,7 @@ class Home extends Component {
     render() {        
         return (
             <View style={styles.container}>
-                <StatusBar barStyle='dark-content' />
+                <StatusBar barStyle='dark-content' backgroundColor='#fff' />
                 <FlatList 
                     data={COMPONENTS}
                     renderItem={this.renderItem}

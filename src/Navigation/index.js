@@ -1,6 +1,6 @@
-import { Animated } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../Components/Home';
 import BottomSheet from '../Components/BottomSheet';
@@ -15,46 +15,25 @@ import Separator from '../Components/Separator';
 import SnackBar from '../Components/SnackBar';
 import Tag from '../Components/Tag';
 
-const transitionConfig = () => ({
-    transitionSpec: {
-        duration: 300,
-        timing: Animated.timing,
-        useNativeDriver: true,
-    },
-    screenInterpolator: sceneProps => {
-        const { layout, position, scene } = sceneProps
+const Stack = createStackNavigator();
 
-        const thisSceneIndex = scene.index
-        const width = layout.initWidth
-
-        const translateX = position.interpolate({
-            inputRange: [thisSceneIndex - 1, thisSceneIndex],
-            outputRange: [width, 0],
-        })
-
-        return { transform: [{ translateX }] }
-    },
-})
-
-const RootStack = createStackNavigator(
-    {
-        Home,
-        BottomSheet,
-        CheckBox,
-        CollapsibleCard,
-        ColorPicker,
-        IconPicker,
-        ModalInput,
-        RadioButton,
-        RadioGroup,
-        Separator,
-        SnackBar,
-        Tag,
-    },
-    {
-        initialRouteName: 'Home',
-        transitionConfig
-    }
-)
-
-export default createAppContainer(RootStack);
+export default function AppNavigation() {
+    return (
+      <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="BottomSheet" component={BottomSheet} />
+            <Stack.Screen name="CheckBox" component={CheckBox} />
+            <Stack.Screen name="CollapsibleCard" component={CollapsibleCard} />
+            <Stack.Screen name="ColorPicker" component={ColorPicker} />
+            <Stack.Screen name="IconPicker" component={IconPicker} />
+            <Stack.Screen name="ModalInput" component={ModalInput} />
+            <Stack.Screen name="RadioButton" component={RadioButton} />
+            <Stack.Screen name="RadioGroup" component={RadioGroup} />
+            <Stack.Screen name="Separator" component={Separator} />
+            <Stack.Screen name="SnackBar" component={SnackBar} />
+            <Stack.Screen name="Tag" component={Tag} />
+          </Stack.Navigator>
+      </NavigationContainer>
+    );
+}
