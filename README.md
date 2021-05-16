@@ -6,4 +6,4 @@ Example of clean and simple components from [react-native-btr](https://www.npmjs
 
 TODO
 
-:yellow_circle: Upgrade to Expo SDK 41
+:yellow_circle: Upgrade to Expo SDK 41 (in progress)
