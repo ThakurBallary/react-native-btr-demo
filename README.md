@@ -4,6 +4,6 @@ Example of clean and simple components from [react-native-btr](https://www.npmjs
 
 :heart: [Open on Expo Go](https://expo.io/@thakurballary/react-native-btr-demo) :iphone:
 
-TODO
+TODO 
 
-:yellow_circle: Upgrade to Expo SDK 41
+:yellow_circle: Upgrade to Expo SDK 41 in progress
