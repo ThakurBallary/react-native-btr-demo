@@ -1,4 +1,4 @@
-# React Native BTR Demo
+# React Native BTR DEMO App
 
 Example of clean and simple components from [react-native-btr](https://www.npmjs.com/package/react-native-btr) library
 
