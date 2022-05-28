@@ -69,5 +69,6 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     margin: 20,
     padding: 20,
+    alignItems: 'center',
   },
 });

@@ -4955,7 +4955,7 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
-lodash.isequal@^4.5.0:
+lodash.isequal@4.5.0, lodash.isequal@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
@@ -6151,13 +6151,13 @@ react-native-animatable@1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
-react-native-btr@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/react-native-btr/-/react-native-btr-2.1.3.tgz#1ac47d614d83298e9c0aa077658f42a5cec91b0f"
-  integrity sha512-nDyrjdUzlYvPToK3LdFMg79Ec69z55Hwgf8cdaqdbAjkeUxopF0sAu3lbUOhDlmb3eaJZQMcKpx5Ngt3nO9CUw==
+react-native-btr@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/react-native-btr/-/react-native-btr-2.1.4.tgz#4ec977fb4af13265cd8b3bef206e299bf5c84030"
+  integrity sha512-VHWiYugQZ+dNYuSAs/GI4SJqeeyBf9jmVDs5YvFF9aEVl5Eun35AoxqWZVWDVFKEWhqJ6GCo+ZlZBeO4sCck4Q==
   dependencies:
-    react-native-modal "^11.7.0"
-    react-native-radio-buttons-group "^2.2.1"
+    react-native-modal "^13.0.1"
+    react-native-radio-buttons-group "^2.2.10"
     react-native-vector-icons "^9.1.0"
 
 react-native-codegen@^0.0.17:
@@ -6191,18 +6191,20 @@ react-native-iphone-x-helper@^1.3.0:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
-react-native-modal@^11.7.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-11.7.0.tgz#6637d757eeac6eda85f7017a9dfdee0c0fe3a34c"
-  integrity sha512-0AeAugUrn12DaJK+k2XGmt8ZIUyWgl1nRdipfwHZDnzFSM8g1oqpf7rHxjOqhimHtmzSj4xJ//ZOn1DWe9aC5Q==
+react-native-modal@^13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-13.0.1.tgz#691f1e646abb96fa82c1788bf18a16d585da37cd"
+  integrity sha512-UB+mjmUtf+miaG/sDhOikRfBOv0gJdBU2ZE1HtFWp6UixW9jCk/bhGdHUgmZljbPpp0RaO/6YiMmQSSK3kkMaw==
   dependencies:
     prop-types "^15.6.2"
     react-native-animatable "1.3.3"
 
-react-native-radio-buttons-group@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/react-native-radio-buttons-group/-/react-native-radio-buttons-group-2.2.1.tgz#9623be6419a8c8bb0b32c98148883eb67158f14b"
-  integrity sha512-Y3cBsOv9ngiLKxuShdMfRVQn2VFUxIACsxjo9HRvvHVZ2tZc28H58K4igmuZVzxWbSbFagAFqx2QuRPfDSVYgQ==
+react-native-radio-buttons-group@^2.2.10:
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/react-native-radio-buttons-group/-/react-native-radio-buttons-group-2.2.10.tgz#619f63ee4d9207fe91b784d74e982bb70d45771a"
+  integrity sha512-ZJfpz0FBjY7DP6elWf/6WlG1wDZUMQX8kXkPeMo90+R273d4TI/JjKEd6FOqOY0c7++EWsPr660u61z39lKP5w==
+  dependencies:
+    lodash.isequal "4.5.0"
 
 react-native-reanimated@~2.8.0:
   version "2.8.0"

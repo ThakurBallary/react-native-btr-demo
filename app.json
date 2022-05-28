@@ -3,7 +3,7 @@
     "name": "BTR Components",
     "description": "Basic and Simple UI Components",
     "slug": "react-native-btr-demo",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
