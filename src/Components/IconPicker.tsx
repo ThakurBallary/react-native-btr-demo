@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { IconPicker } from "react-native-btr";
+import { IconPicker, Icon } from "react-native-btr";
 
 export default function IconPickerDemo() {
-  const [selectedIcon, setSelectedIcon] = useState("");
+  const [selectedIcon, setSelectedIcon] = useState();
 
-  function setIcon(icon: string) {
+  function setIcon(icon: Icon) {
     setSelectedIcon(icon);
   }
 
   return (
     <View style={styles.container}>
-      <Text>Selected Icon = {selectedIcon}</Text>
+      <Text>Selected Icon = {selectedIcon?.type}: {selectedIcon?.name}</Text>
       <View style={styles.wrapper}>
         <IconPicker selectedIcon={selectedIcon} onSelect={setIcon} />
       </View>
