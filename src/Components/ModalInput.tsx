@@ -54,14 +54,14 @@ export default function ModalInputDemo() {
           <Text>Update Values</Text>
         </TouchableOpacity>
       </View>
-      {modalInputVisible && (
+      {!!modalInputVisible && (
         <ModalInput onCancel={onCancel} onOk={onOk}>
           <ColorPicker
             selectedColor={color}
             onSelect={(color) => setColor(color)}
           />
           <Separator />
-          <IconPicker selectedIcon={icon} onSelect={(icon) => setIcon(icon)} />
+          <IconPicker selectedIcon={icon} onSelect={(icon) => setIcon(icon.name)} />
           <Separator />
           <TextInput
             placeholder="Text"

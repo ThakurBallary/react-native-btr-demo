@@ -22,7 +22,7 @@ export default function BottomSheetDemo() {
         onBackdropPress={toggle}
       >
         <View style={styles.card}>
-          <Text>Place your custom view inside BottomSheet</Text>
+          <Text>Place your custom view inside the BottomSheet</Text>
         </View>
       </BottomSheet>
     </View>
