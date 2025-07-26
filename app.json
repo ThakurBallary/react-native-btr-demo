@@ -2,7 +2,7 @@
   "expo": {
     "name": "react-native-btr-demo",
     "slug": "react-native-btr-demo",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,7 +23,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.thakurballary.reactnativebtrdemo"
+      "package": "com.thakurballary.reactnativebtrdemo",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -38,6 +39,7 @@
     },
     "updates": {
       "url": "https://u.expo.dev/40685170-719e-11e8-b4e7-6f8c5fb3281e"
-    }
+    },
+    "newArchEnabled": true
   }
 }

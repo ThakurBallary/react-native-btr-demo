@@ -6,7 +6,7 @@
     "development": {
       "channel": "development",
       "developmentClient": true,
-      "distribution": "internal",
+      "distribution": "internal"
     },
     "preview": {
       "channel": "preview",
@@ -16,7 +16,10 @@
       }
     },
     "production": {
-      "channel": "production"
+      "channel": "production",
+      "android": {
+        "autoIncrement": true
+      }
     }
   },
   "submit": {
